@@ -1,0 +1,11 @@
+C:\Users\adem1\IdeaProjects\Influencer\epam-spring-tasks\trainer-workload-service\src\main\java\com\influencer\trainer_workload\dto\response\TrainerWorkloadResponse.java
+C:\Users\adem1\IdeaProjects\Influencer\epam-spring-tasks\trainer-workload-service\src\main\java\com\influencer\trainer_workload\service\impl\TrainerWorkloadServiceImpl.java
+C:\Users\adem1\IdeaProjects\Influencer\epam-spring-tasks\trainer-workload-service\src\main\java\com\influencer\trainer_workload\repository\TrainerWorkloadRepository.java
+C:\Users\adem1\IdeaProjects\Influencer\epam-spring-tasks\trainer-workload-service\src\main\java\com\influencer\trainer_workload\dto\request\TrainerWorkloadRequest.java
+C:\Users\adem1\IdeaProjects\Influencer\epam-spring-tasks\trainer-workload-service\src\main\java\com\influencer\trainer_workload\service\TrainerWorkloadService.java
+C:\Users\adem1\IdeaProjects\Influencer\epam-spring-tasks\trainer-workload-service\src\main\java\com\influencer\trainer_workload\TrainerWorkloadServiceApplication.java
+C:\Users\adem1\IdeaProjects\Influencer\epam-spring-tasks\trainer-workload-service\src\main\java\com\influencer\trainer_workload\dto\request\InvalidTrainerWorkloadMessage.java
+C:\Users\adem1\IdeaProjects\Influencer\epam-spring-tasks\trainer-workload-service\src\main\java\com\influencer\trainer_workload\messaging\TrainerWorkloadMessageListener.java
+C:\Users\adem1\IdeaProjects\Influencer\epam-spring-tasks\trainer-workload-service\src\main\java\com\influencer\trainer_workload\controller\TrainerWorkloadController.java
+C:\Users\adem1\IdeaProjects\Influencer\epam-spring-tasks\trainer-workload-service\src\main\java\com\influencer\trainer_workload\model\TrainerMonthlyWorkload.java
+C:\Users\adem1\IdeaProjects\Influencer\epam-spring-tasks\trainer-workload-service\src\main\java\com\influencer\trainer_workload\dto\response\TrainerWorkloadDetailsResponse.java
