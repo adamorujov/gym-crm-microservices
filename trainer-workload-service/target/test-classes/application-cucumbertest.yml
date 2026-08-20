@@ -1,0 +1,41 @@
+de:
+  flapdoodle:
+    mongodb:
+      embedded:
+        version: 7.0.2
+
+spring:
+  cloud:
+    compatibility-verifier:
+      enabled: false
+  activemq:
+    broker-url: vm://localhost?broker.persistent=false
+    in-memory: true
+  jms:
+    pub-sub-domain: false
+    listener:
+      auto-startup: false
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+      - org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration
+      - org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration
+      - org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration
+      - org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration
+
+eureka:
+  client:
+    enabled: false
+    register-with-eureka: false
+    fetch-registry: false
+
+security:
+  jwt:
+    secret: "CUCUMBER_TEST_SECRET_KEY_1234567890_ABCDEFGHIJ"
+    expiration-minutes: 60
+
+app:
+  messaging:
+    trainer-workload:
+      queue: trainer.workload.test.queue
+      invalid-queue: trainer.workload.test.invalid.dlq
