@@ -1,0 +1,16 @@
+com\influencer\trainer_workload\dto\request\TrainerWorkloadRequest.class
+com\influencer\trainer_workload\model\TrainerTrainingSummary$MonthSummary.class
+com\influencer\trainer_workload\repository\TrainerWorkloadRepository.class
+com\influencer\trainer_workload\service\TrainerWorkloadService.class
+com\influencer\trainer_workload\model\TrainerMonthlyWorkload.class
+com\influencer\trainer_workload\controller\TrainerWorkloadController.class
+com\influencer\trainer_workload\dto\response\TrainerWorkloadDetailsResponse$YearSummary.class
+com\influencer\trainer_workload\service\impl\TrainerWorkloadServiceImpl.class
+com\influencer\trainer_workload\dto\response\TrainerWorkloadDetailsResponse.class
+com\influencer\trainer_workload\dto\response\TrainerWorkloadResponse.class
+com\influencer\trainer_workload\TrainerWorkloadServiceApplication.class
+com\influencer\trainer_workload\messaging\TrainerWorkloadMessageListener.class
+com\influencer\trainer_workload\model\TrainerTrainingSummary$YearSummary.class
+com\influencer\trainer_workload\dto\response\TrainerWorkloadDetailsResponse$MonthSummary.class
+com\influencer\trainer_workload\model\TrainerTrainingSummary.class
+com\influencer\trainer_workload\dto\request\InvalidTrainerWorkloadMessage.class

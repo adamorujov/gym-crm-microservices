@@ -1,34 +1,16 @@
 package com.influencer.trainer_workload.repository;
 
-import com.influencer.trainer_workload.model.TrainerMonthlyWorkload;
+import com.influencer.trainer_workload.model.TrainerTrainingSummary;
+import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
-import java.util.HashMap;
-import java.util.Map;
+
 import java.util.Optional;
 
 @Repository
-public class TrainerWorkloadRepository {
+public interface TrainerWorkloadRepository extends MongoRepository<TrainerTrainingSummary, String> {
 
-    private final Map<String, TrainerMonthlyWorkload> workloadDatabase = new HashMap<>();
+    Optional<TrainerTrainingSummary> findByTrainerUsername(String trainerUsername);
 
-    public void save(TrainerMonthlyWorkload workload) {
-        workloadDatabase.put(workload.getTrainerUsername(), workload);
-    }
-
-    public Optional<TrainerMonthlyWorkload> findByUsername(String username) {
-        return Optional.ofNullable(workloadDatabase.get(username));
-    }
-
-    public Map<String, TrainerMonthlyWorkload> findAll() {
-        return new HashMap<>(workloadDatabase);
-    }
-
-    public boolean existsByUsername(String username) {
-        return workloadDatabase.containsKey(username);
-    }
-
-    public void deleteByUsername(String username) {
-        workloadDatabase.remove(username);
-    }
+    boolean existsByTrainerUsername(String trainerUsername);
 }
 

@@ -4,10 +4,6 @@ import com.influencer.trainer_workload.dto.request.TrainerWorkloadRequest;
 import com.influencer.trainer_workload.dto.response.TrainerWorkloadDetailsResponse;
 import com.influencer.trainer_workload.dto.response.TrainerWorkloadResponse;
 import com.influencer.trainer_workload.service.TrainerWorkloadService;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
 import jakarta.validation.Valid;
 import java.util.UUID;
 import org.slf4j.Logger;
@@ -18,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/trainer-workload")
-@Api(tags = "Trainer Workload API")
 public class TrainerWorkloadController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(TrainerWorkloadController.class);
@@ -34,12 +29,6 @@ public class TrainerWorkloadController {
         MDC.put("transactionId", UUID.randomUUID().toString());
     }
 
-    @ApiOperation(value = "Process trainer workload (ADD or DELETE training)")
-    @ApiResponses({
-            @ApiResponse(code = 200, message = "Workload processed successfully"),
-            @ApiResponse(code = 400, message = "Invalid request"),
-            @ApiResponse(code = 401, message = "Unauthorized")
-    })
     @PostMapping("/process")
     public ResponseEntity<TrainerWorkloadResponse> processTrainerWorkload(
             @Valid @RequestBody TrainerWorkloadRequest request) {
@@ -60,11 +49,6 @@ public class TrainerWorkloadController {
         }
     }
 
-    @ApiOperation(value = "Get trainer workload summary")
-    @ApiResponses({
-            @ApiResponse(code = 200, message = "Workload retrieved successfully"),
-            @ApiResponse(code = 404, message = "Trainer not found")
-    })
     @GetMapping("/trainer/{username}")
     public ResponseEntity<TrainerWorkloadDetailsResponse> getTrainerWorkload(
             @PathVariable String username) {
@@ -77,7 +61,6 @@ public class TrainerWorkloadController {
         return ResponseEntity.ok(response);
     }
 
-    @ApiOperation(value = "Health check endpoint")
     @GetMapping("/health")
     public ResponseEntity<TrainerWorkloadResponse> health() {
         String transactionId = MDC.get("transactionId");
