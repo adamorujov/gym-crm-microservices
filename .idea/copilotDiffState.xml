@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/gym_crm_system/src/main/java/com/influencer/epam_spring_tasks/Main.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/gym_crm_system/src/main/java/com/influencer/epam_spring_tasks/Main.java" />
+              <option name="originalContent" value="package com.influencer.epam_spring_tasks;&#10;&#10;import org.springframework.boot.SpringApplication;&#10;import org.springframework.boot.autoconfigure.SpringBootApplication;&#10;import org.springframework.cloud.client.discovery.EnableDiscoveryClient;&#10;import org.springframework.cloud.openfeign.EnableFeignClients;&#10;&#10;@SpringBootApplication&#10;@EnableDiscoveryClient&#10;@EnableFeignClients&#10;public class Main {&#10;&#10;    public static void main(String[] args) {&#10;        SpringApplication.run(Main.class, args);&#10;    }&#10;}" />
+              <option name="updatedContent" value="package com.influencer.epam_spring_tasks;&#10;&#10;import org.springframework.boot.SpringApplication;&#10;import org.springframework.boot.autoconfigure.SpringBootApplication;&#10;import org.springframework.cloud.client.discovery.EnableDiscoveryClient;&#10;import org.springframework.jms.annotation.EnableJms;&#10;&#10;@SpringBootApplication&#10;@EnableDiscoveryClient&#10;@EnableJms&#10;public class Main {&#10;&#10;    public static void main(String[] args) {&#10;        SpringApplication.run(Main.class, args);&#10;    }&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
