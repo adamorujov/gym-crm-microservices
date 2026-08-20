@@ -1,2 +1,9 @@
+com\influencer\trainer_workload\cucumber\steps\WorkloadProcessingSteps.class
+com\influencer\trainer_workload\cucumber\CucumberSpringConfiguration.class
+com\influencer\trainer_workload\cucumber\steps\WorkloadRetrievalSteps.class
+com\influencer\trainer_workload\cucumber\steps\WorkloadContext.class
+com\influencer\trainer_workload\cucumber\steps\WorkloadIntegrationSteps.class
 com\influencer\trainer_workload\repository\TrainerWorkloadRepositoryTest.class
 com\influencer\trainer_workload\service\TrainerWorkloadServiceImplTest.class
+com\influencer\trainer_workload\cucumber\CucumberRunnerTest.class
+com\influencer\trainer_workload\cucumber\steps\WorkloadCommonSteps.class
